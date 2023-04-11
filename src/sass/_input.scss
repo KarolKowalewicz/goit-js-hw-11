@@ -1,0 +1,38 @@
+input {
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+  }
+  .boxInput {
+    height: 60px;
+    background-color: #0066ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-form {
+    position: relative;
+  }
+  .search-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    
+    height: 100%;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .fa:hover {
+    color: blue;
+  }
+  .search-form input:focus + button .fa {
+    color: red;
+  }
+  .load-more {
+    display: none;
+  }

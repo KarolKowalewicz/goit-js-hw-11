@@ -1,0 +1,36 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 15px;
+  }
+  .photo-card {
+    flex-basis: calc((100% - 45px) / 4);
+    border: 1px solid grey;
+    box-shadow: 2px 4px 8px 1px #42445A;
+    transform: scale(1.0);
+    transition: 300ms cubic-bezier(.17,.67,.83,.67);
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .photo-card img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+  }
+  .info-item {
+   display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+  }
+  
